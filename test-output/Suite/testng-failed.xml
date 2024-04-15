@@ -8,13 +8,13 @@
     <classes>
       <class name="com.tyss.ventasInforme.admin.CreateCustomerTest">
         <methods>
-          <include name="connectToDb"/>
           <include name="launchBrowser"/>
+          <include name="connectToDb"/>
           <include name="closeDb"/>
           <include name="CreateCustomer"/>
+          <include name="closeBrowser"/>
           <include name="login"/>
           <include name="logout"/>
-          <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.tyss.ventasInforme.admin.CreateCustomerTest -->
     </classes>

@@ -4,6 +4,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataExecute {
 
+	
 	@DataProvider
 	public Object[][] data() {
 		Object[][] obj = new Object[1][3];
