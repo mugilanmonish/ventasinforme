@@ -62,7 +62,7 @@ public class ListenerImplementationClass implements ITestListener {
 		reports = new ExtentReports();
 		reports.attachReporter(htmlReport);
 		reports.setSystemInfo("Base-Platform", "Windows");
-		reports.setSystemInfo("Base-Broswe", "chrome");
+		reports.setSystemInfo("Base-Broswer", "chrome");
 		reports.setSystemInfo("Base-URL", "http://rmgtestingserver/domain/Sales_And_Inventory_System/pages/login.php");
 		reports.setSystemInfo("ReporterName", "Mugilan");
 	}

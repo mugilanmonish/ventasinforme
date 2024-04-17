@@ -17,7 +17,7 @@ public class CreateCustomerTest extends BaseClass {
 		String firstNameUpdate = eUtils.readDataFromExcel("admin", 6, 0)+uniqueNumber;
 		CustomerPage customer = new CustomerPage(driver);
 		HomePage home = new HomePage(driver);
-//		wUtils.acceptAlert();
+		wUtils.acceptAlert();
 		home.getCustomerLink().click();
 		customer.createCustomer(driver, name, lastname, phone, wUtils);
 		customer.searchAndUpdateCustomer(driver, name, firstNameUpdate, lastname, phone, wUtils);

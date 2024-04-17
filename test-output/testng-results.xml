@@ -1,131 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="0" failed="2" skipped="0">
+<testng-results retried="3" ignored="4" total="10" passed="2" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[--Db connected--]]>
+    </line>
+    <line>
+      <![CDATA[--CHROME BROWSSER LAUNCHED SUCCESSFULLY--]]>
+    </line>
+    <line>
+      <![CDATA[--CHROME BROWSSER LAUNCHED SUCCESSFULLY--]]>
+    </line>
+    <line>
+      <![CDATA[--CHROME BROWSSER LAUNCHED SUCCESSFULLY--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED IN TO APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED IN TO APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED IN TO APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED IN TO APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED IN TO APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED IN TO APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--BROWSER CLOSED--]]>
+    </line>
+    <line>
+      <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+    </line>
+    <line>
+      <![CDATA[--BROWSER CLOSED--]]>
+    </line>
+    <line>
+      <![CDATA[--BROWSER CLOSED--]]>
+    </line>
+    <line>
+      <![CDATA[--DB CLOSED--]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-04-15T14:38:36 IST" name="Default suite" finished-at="2024-04-15T14:41:06 IST" duration-ms="149570">
+  <suite started-at="2024-04-15T18:06:37 IST" name="Suite" finished-at="2024-04-15T18:07:14 IST" duration-ms="37423">
     <groups>
     </groups>
-    <test started-at="2024-04-15T14:38:36 IST" name="Default test" finished-at="2024-04-15T14:41:06 IST" duration-ms="149570">
-      <class name="testngPractice.DataTest">
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testngPractice.DataTest@77847718]" started-at="2024-04-15T14:38:39 IST" name="login" data-provider="readDataFromExcel" finished-at="2024-04-15T14:39:49 IST" duration-ms="70330" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ungradable]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
-Host info: host: 'BYE-BYE', ip: '192.168.0.235'
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
-Host info: host: 'BYE-BYE', ip: '192.168.0.235'
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
-at testngPractice.DataTest.login(DataTest.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+    <test started-at="2024-04-15T18:06:37 IST" name="Test" finished-at="2024-04-15T18:07:14 IST" duration-ms="37423">
+      <class name="com.tyss.ventasInforme.admin.CreateCustomerTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:06:37 IST" name="launchBrowser" finished-at="2024-04-15T18:06:48 IST" duration-ms="10599" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[--CHROME BROWSSER LAUNCHED SUCCESSFULLY--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:06:48 IST" name="login" finished-at="2024-04-15T18:06:51 IST" duration-ms="3769" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED IN TO APPLICATION--]]>
+            </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testngPractice.DataTest@77847718]" started-at="2024-04-15T14:39:49 IST" name="login" data-provider="readDataFromExcel" finished-at="2024-04-15T14:41:05 IST" duration-ms="76504" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method retried="true" signature="CreateCustomer()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:06:51 IST" name="CreateCustomer" finished-at="2024-04-15T18:06:52 IST" duration-ms="1036" status="SKIP">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=123.0.6312.107)
+              <![CDATA[unexpected alert open: {Alert text : Prince Ly Welcome!}
+  (Session info: chrome=123.0.6312.107): Prince Ly Welcome!
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [44a11cc29eb65bf7fb2be4fb896055cd, findElement {using=xpath, value=//input[@placeholder='Username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50480}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50480/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44a11cc29eb65bf7fb2be4fb896055cd]]>
+Command: [68148b458affebec7a316b879c0cb7f9, findElement {value=//span[.='Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57585/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68148b458affebec7a316b879c0cb7f9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=123.0.6312.107)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Prince Ly Welcome!}
+  (Session info: chrome=123.0.6312.107): Prince Ly Welcome!
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [44a11cc29eb65bf7fb2be4fb896055cd, findElement {using=xpath, value=//input[@placeholder='Username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50480}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50480/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44a11cc29eb65bf7fb2be4fb896055cd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+Command: [68148b458affebec7a316b879c0cb7f9, findElement {value=//span[.='Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57585/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68148b458affebec7a316b879c0cb7f9
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
@@ -137,9 +114,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
-at com.tyss.ventasInforme.ObjectRepository.LoginPage.loginToApp(LoginPage.java:46)
-at testngPractice.DataTest.login(DataTest.java:24)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.tyss.ventasInforme.admin.CreateCustomerTest.CreateCustomer(CreateCustomerTest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,29 +128,322 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:06:53 IST" name="logout" finished-at="2024-04-15T18:06:55 IST" duration-ms="2952" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:06:55 IST" name="login" finished-at="2024-04-15T18:06:58 IST" duration-ms="2725" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED IN TO APPLICATION--]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- login -->
-      </class> <!-- testngPractice.DataTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method retried="true" signature="CreateCustomer()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:06:58 IST" name="CreateCustomer" finished-at="2024-04-15T18:06:59 IST" duration-ms="477" status="SKIP">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Prince Ly Welcome!}
+  (Session info: chrome=123.0.6312.107): Prince Ly Welcome!
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68148b458affebec7a316b879c0cb7f9, findElement {value=//span[.='Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57585/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68148b458affebec7a316b879c0cb7f9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Prince Ly Welcome!}
+  (Session info: chrome=123.0.6312.107): Prince Ly Welcome!
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68148b458affebec7a316b879c0cb7f9, findElement {value=//span[.='Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57585/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68148b458affebec7a316b879c0cb7f9
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.tyss.ventasInforme.admin.CreateCustomerTest.CreateCustomer(CreateCustomerTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:06:59 IST" name="logout" finished-at="2024-04-15T18:07:00 IST" duration-ms="1721" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:07:00 IST" name="login" finished-at="2024-04-15T18:07:02 IST" duration-ms="1181" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED IN TO APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method retried="true" signature="CreateCustomer()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:07:02 IST" name="CreateCustomer" finished-at="2024-04-15T18:07:02 IST" duration-ms="369" status="SKIP">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Prince Ly Welcome!}
+  (Session info: chrome=123.0.6312.107): Prince Ly Welcome!
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68148b458affebec7a316b879c0cb7f9, findElement {value=//span[.='Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57585/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68148b458affebec7a316b879c0cb7f9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Prince Ly Welcome!}
+  (Session info: chrome=123.0.6312.107): Prince Ly Welcome!
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68148b458affebec7a316b879c0cb7f9, findElement {value=//span[.='Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57585/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68148b458affebec7a316b879c0cb7f9
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.tyss.ventasInforme.admin.CreateCustomerTest.CreateCustomer(CreateCustomerTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:07:02 IST" name="logout" finished-at="2024-04-15T18:07:03 IST" duration-ms="1224" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:07:03 IST" name="login" finished-at="2024-04-15T18:07:04 IST" duration-ms="854" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED IN TO APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateCustomer()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:07:04 IST" name="CreateCustomer" finished-at="2024-04-15T18:07:05 IST" duration-ms="619" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Prince Ly Welcome!}
+  (Session info: chrome=123.0.6312.107): Prince Ly Welcome!
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68148b458affebec7a316b879c0cb7f9, findElement {value=//span[.='Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57585/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68148b458affebec7a316b879c0cb7f9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Prince Ly Welcome!}
+  (Session info: chrome=123.0.6312.107): Prince Ly Welcome!
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68148b458affebec7a316b879c0cb7f9, findElement {value=//span[.='Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\Mugilan\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57585/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68148b458affebec7a316b879c0cb7f9
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.tyss.ventasInforme.admin.CreateCustomerTest.CreateCustomer(CreateCustomerTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:07:05 IST" name="logout" finished-at="2024-04-15T18:07:06 IST" duration-ms="1056" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.tyss.ventasInforme.admin.CreateCustomerTest@4218d6a3]" started-at="2024-04-15T18:07:06 IST" name="closeBrowser" finished-at="2024-04-15T18:07:13 IST" duration-ms="6959" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--BROWSER CLOSED--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.tyss.ventasInforme.admin.CreateCustomerTest -->
+      <class name="com.tyss.ventasInforme.admin.CreatedProductTest">
+        <test-method is-config="true" signature="connectToDb()[pri:0, instance:com.tyss.ventasInforme.admin.CreatedProductTest@692f203f]" started-at="2024-04-15T18:06:36 IST" name="connectToDb" finished-at="2024-04-15T18:06:37 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--Db connected--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectToDb -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.tyss.ventasInforme.admin.CreatedProductTest@692f203f]" started-at="2024-04-15T18:06:37 IST" name="launchBrowser" finished-at="2024-04-15T18:06:48 IST" duration-ms="10680" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--CHROME BROWSSER LAUNCHED SUCCESSFULLY--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.tyss.ventasInforme.admin.CreatedProductTest@692f203f]" started-at="2024-04-15T18:06:48 IST" name="login" finished-at="2024-04-15T18:06:54 IST" duration-ms="6041" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED IN TO APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreatedProduct()[pri:0, instance:com.tyss.ventasInforme.admin.CreatedProductTest@692f203f]" started-at="2024-04-15T18:06:54 IST" name="CreatedProduct" finished-at="2024-04-15T18:07:10 IST" duration-ms="15887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreatedProduct -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.tyss.ventasInforme.admin.CreatedProductTest@692f203f]" started-at="2024-04-15T18:07:10 IST" name="logout" finished-at="2024-04-15T18:07:10 IST" duration-ms="784" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.tyss.ventasInforme.admin.CreatedProductTest@692f203f]" started-at="2024-04-15T18:07:10 IST" name="closeBrowser" finished-at="2024-04-15T18:07:14 IST" duration-ms="3679" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--BROWSER CLOSED--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeDb()[pri:0, instance:com.tyss.ventasInforme.admin.CreatedProductTest@692f203f]" started-at="2024-04-15T18:07:14 IST" name="closeDb" finished-at="2024-04-15T18:07:14 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--DB CLOSED--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeDb -->
+      </class> <!-- com.tyss.ventasInforme.admin.CreatedProductTest -->
+      <class name="com.tyss.ventasInforme.admin.CreateSupplierTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.tyss.ventasInforme.admin.CreateSupplierTest@76505305]" started-at="2024-04-15T18:06:37 IST" name="launchBrowser" finished-at="2024-04-15T18:06:49 IST" duration-ms="11953" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--CHROME BROWSSER LAUNCHED SUCCESSFULLY--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.tyss.ventasInforme.admin.CreateSupplierTest@76505305]" started-at="2024-04-15T18:06:49 IST" name="login" finished-at="2024-04-15T18:06:52 IST" duration-ms="2754" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED IN TO APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateSupplier()[pri:0, instance:com.tyss.ventasInforme.admin.CreateSupplierTest@76505305]" started-at="2024-04-15T18:06:52 IST" name="CreateSupplier" finished-at="2024-04-15T18:07:13 IST" duration-ms="21212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSupplier -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.tyss.ventasInforme.admin.CreateSupplierTest@76505305]" started-at="2024-04-15T18:07:13 IST" name="logout" finished-at="2024-04-15T18:07:14 IST" duration-ms="675" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--LOGGED OUT THE APPLICATION--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.tyss.ventasInforme.admin.CreateSupplierTest@76505305]" started-at="2024-04-15T18:07:14 IST" name="closeBrowser" finished-at="2024-04-15T18:07:14 IST" duration-ms="736" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[--BROWSER CLOSED--]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.tyss.ventasInforme.admin.CreateSupplierTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
