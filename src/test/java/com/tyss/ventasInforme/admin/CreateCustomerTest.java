@@ -23,5 +23,6 @@ public class CreateCustomerTest extends BaseClass {
 		customer.searchAndUpdateCustomer(driver, name, firstNameUpdate, lastname, phone, wUtils);
 		customer.checkUpdatedCustomer(driver, firstNameUpdate, name);
 		// Changes by mugilan
+		//make change
 	}
 }
