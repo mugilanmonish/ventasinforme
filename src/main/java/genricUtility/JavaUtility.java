@@ -30,5 +30,6 @@ public class JavaUtility {
 		int random = ran.nextInt(1000);
 		String[] s = mail.split("@");
 		return(s[0]+random+"@"+s[1]);
+		//
 	}
 }
