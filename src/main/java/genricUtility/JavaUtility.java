@@ -24,4 +24,8 @@ public class JavaUtility {
 		String sysDateInFormat = dateFormat.format(dt);
 		return sysDateInFormat;
 	}
+	
+	public void uniqueEmail() {
+		
+	}
 }
