@@ -3,6 +3,7 @@
   <groupId>TYSS</groupId>
   <artifactId>VentasInforme</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
    <dependencies>
 	  
 	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -48,7 +49,50 @@
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
 </dependency>
-
-
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.20</version>
+    <scope>provided</scope>
+</dependency>
   </dependencies>
+  <profiles>
+	<profile>
+		<id>BatchId</id>
+		<build>
+		<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>betestng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+		</build>
+	</profile>
+	
+	<profile>
+		<id>BatchId2</id>
+		<build>
+		<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>batch.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+		</build>
+	</profile>
+	
+</profiles>
 </project>
