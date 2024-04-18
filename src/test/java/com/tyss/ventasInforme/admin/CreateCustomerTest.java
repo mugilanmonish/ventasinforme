@@ -24,6 +24,6 @@ public class CreateCustomerTest extends BaseClass {
 		customer.checkUpdatedCustomer(driver, firstNameUpdate, name);
 		// Changes by mugilan
 		//make change
-		// Again made changes by mugilan
+		// Again made changes by mugilan.
 	}
 }
