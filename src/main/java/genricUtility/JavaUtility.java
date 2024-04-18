@@ -25,7 +25,10 @@ public class JavaUtility {
 		return sysDateInFormat;
 	}
 	
-	public void uniqueEmail() {
-		
+	public String uniqueEmail(String mail) {
+		Random ran = new Random();
+		int random = ran.nextInt(1000);
+		String[] s = mail.split("@");
+		return(s[0]+random+"@"+s[1]);
 	}
 }
